@@ -4,6 +4,16 @@
   		die("DB Connection Failed.");
 	}
 
+	$q = sprintf('insert into %s values(key="%s", name="%s", count="0")', $file_name, '001', 'namae desu');
+	if (! $db->query($q)) {
+  	die("DB Insert Error.");
+	}
+	
+	$q = sprintf('select * from %s where key="001"', $file_name);
+	if (! $db->query($q)) {
+  		die("DB Select Error.");
+	}
+	
 	
 	class db_sqlite extends SQLite3
 	{
