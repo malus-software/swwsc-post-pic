@@ -1,4 +1,9 @@
 <?php
+	$file_name = "swwsc-post-pic.sqlite3";
+	if (! $db = new PDO($file_name)) {
+  		die("DB Connection Failed.");
+	}
+
 	
 	class db_sqlite extends SQLite3
 	{
