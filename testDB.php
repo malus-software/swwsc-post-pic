@@ -1,5 +1,6 @@
 <?php
 	echo "qqq";
+	/*
 	ini_set( 'display_errors', 1 );
 	echo "ooo";
 	$file_name = "swwsc-post-pic.sqlite3";
@@ -19,5 +20,6 @@
   		die("DB Select Error.");
 	}
 	echo "eee";
+	*/
 	
 ?>
